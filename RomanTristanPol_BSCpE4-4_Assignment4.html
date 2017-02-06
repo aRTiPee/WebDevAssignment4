@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASSIGNMENT NO. 4</title>
+    
+    <style type="text/css">
+    html {
+        background-image: url("bg.jpg");
+    }
+    .modalDialog {
+        top: 45px;
+        right: 0;
+        bottom: 0;
+        left: 500px;
+        outline: none;
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        //background: rgba(0, 0, 0, 0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+        font-size: 10px;
+    }
+    .modalDialog:target {
+        opacity:1;
+    }
+    .modalDialog > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        background: #fff;
+        background: -moz-linear-gradient(#fff, #999);
+        background: -webkit-linear-gradient(#fff, #999);
+        background: -o-linear-gradient(#fff, #999);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+    .close {
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+        pointer-events: auto;
+    }
+    .close:hover {
+        background: #00d9ff;
+    }
+    </style>
+</head>
+<body>
+    <body>
+    <center><h3 style="color: maroon">Polytechnic University of the Philippines</h3></center>
+    <center><h2 style="color: blackx">SITE MAP</h2></center>
+    <img src="PUP_MAP.jpg" width="500" height="380" usemap="#sample" style="opacity: 0.9" border="3">
+    <u></u>
+    <map name="sample">
+        <area shape="poly" coords="174, 203, 185, 199, 188, 193, 196, 193, 198, 200, 208, 201, 207, 209, 200, 215, 191, 217, 180, 215, 174, 203" href="#a1">
+        <area shape="poly" coords="125, 28, 143, 28, 143, 54, 135, 54, 135, 44, 129, 43 127, 33, 125, 32, 125, 28" href="#a2">
+        <area shape="poly" coords="150, 361, 150, 348, 165, 348, 167, 346, 169, 345, 173, 345, 175, 346, 177, 348, 190, 348, 191, 361, 150, 361" href="#a3">
+        <area shape="poly" coords="287, 100, 315, 149, 323, 154, 333, 154, 335, 151, 338, 150, 342, 149, 345, 151, 347, 154, 448, 154, 448, 162, 347, 162, 345, 163, 343, 164, 339, 165, 336, 163, 333, 162, 319, 162, 313, 158, 310, 157, 281, 106, 287, 100" href="#a4">
+        <area shape="circle" coords="249, 164, 9" href="#a5">
+        <area shape="poly" coords="69, 126, 128, 161, 118, 179, 59, 144, 69, 126" href="#a6">
+        <area shape="poly" coords="441, 327, 453, 327, 453, 331, 457, 331, 460, 335, 461, 341, 458, 346, 454, 347, 451, 347, 451, 351, 439, 351, 439, 345, 448, 345, 446, 340, 446, 337, 448, 333, 441, 333, 441, 327" href="#a7">
+        <area shape="circle" coords="264, 221, 9" href="#a8">
+        <area shape="poly" coords="310, 254, 339, 212, 350, 218, 338, 235, 337, 238, 334, 243, 332, 244, 320, 262, 310, 254" href="#a9">
+        <area shape="poly" coords="330, 39, 409, 39, 404, 46, 404, 75, 410, 82, 330, 82, 330, 39" href="#a10">
+        <area shape="circle" coords="246, 301, 38" href="#a11">
+        <area shape="circle" coords="284, 166, 13" href="#a32">
+    </map>
+
+
+    <div id="a1" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="1.jpg" width="200" height="200">
+            <h1>Amphitheater</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+    <div id="a2" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="2.jpg" width="200" height="200">
+            <h1>Banda Kawayan, Sining Lahi Headquarters</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+    <div id="a3" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="3x.jpg" width="200" height="200">
+            <h1>Building and Grounds Maintenance Office</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+
+    <div id="a4" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="4.jpg" width="200" height="200">
+            <h1>Catwalk</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+    <div id="a5" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="5x.jpg" width="200" height="200">
+            <h1>Centennial Monument</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+    <div id="a6" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="6.jpg" width="200" height="200">
+            <h1>Charlie del Rosario<br>Student Development Center</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+    <div id="a7" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="7x.jpg" width="200" height="200">
+            <h1>East Gate</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+    <div id="a8" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="8.jpg" width="200" height="200">
+            <h1>Flagpole</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+    <div id="a9" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="9x.jpg" width="200" height="200">
+            <h1>Grandstand</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+    <div id="a10" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="10x.jpg" width="200" height="200">
+            <h1>Gymnasium</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+    <div id="a11" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="11x.jpg" width="200" height="200">
+            <h1>Interfaith Chapel</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+
+    <div id="a32" class="modalDialog">
+        <div>   
+        <a href="#close" title="Close" class="close">X</a>
+
+            <center>
+            <br>
+            <img src="32x.jpg" width="200" height="200">
+            <h1>PUP Obelisk<br>(and the Mabini Monument)</h1>
+
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            </center>
+        </div>
+    </div>
+
+
+</body>
+</html>
