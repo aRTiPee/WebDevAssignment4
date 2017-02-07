@@ -24,8 +24,44 @@
         pointer-events: none;
         font-size: 10px;
     }
+    .modalDialogPin1 {
+        top: 265px;
+        right: 0;
+        bottom: 0;
+        left: 178px;
+        outline: none;
+        position: fixed;
+        //background: rgba(0, 0, 0, 0.8);
+        z-index: 99999;
+        opacity: 0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+    .modalDialogPin2 {
+        top: 98px;
+        right: 0;
+        bottom: 0;
+        left: 121px;
+        outline: none;
+        position: fixed;
+        //background: rgba(0, 0, 0, 0.8);
+        z-index: 99999;
+        opacity: 0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
     .modalDialog:target {
         opacity:1;
+    }
+    .modalDialogPin1:target {
+        opacity: 1;
+    }
+    .modalDialogPin2:target {
+        opacity: 1;
     }
     .modalDialog > div {
         width: 400px;
@@ -103,6 +139,9 @@
             </center>
         </div>
     </div>
+    <div id="a1" class="modalDialogPin1">
+        <img src="pin.png" width="50" height="50">
+    </div>
 
     <div id="a2" class="modalDialog">
         <div>   
@@ -119,6 +158,9 @@
             <p>The quick brown fox jumps over the lazy dog.</p>
             </center>
         </div>
+    </div>
+    <div id="a2" class="modalDialogPin2">
+        <img src="pin.png" width="50" height="50">
     </div>
 
     <div id="a3" class="modalDialog">
